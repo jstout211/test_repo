@@ -9,7 +9,7 @@ jobs:
         #with:
                 #Enode-version: '14'
       - run: sudo apt-get install datalad
-      - run: datalad install https://github.com/OpenNeuroDatasets/ds004215.git
-      - run: datalad get ./ds004215/sub-ON02747/ses-01/meg/*artifact*
+      - run: datalad install https://github.com/OpenNeuroDatasets/ds004297.git
+      - run: datalad get ./derivatives/sub-ON02747/ses-01/meg/
       - run: pip install pytest install git+https://github.com/nih-megcore/nih_to_mne
       - run: pytest -vv
